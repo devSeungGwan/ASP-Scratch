@@ -19,7 +19,7 @@ namespace ASP_Scratch.Controllers
         {
             _context = context;
         }
-
+        
         // GET: api/TodoItems
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems()

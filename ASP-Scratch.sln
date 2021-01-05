@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP-Scratch", "ASP-Scratch\ASP-Scratch.csproj", "{BBD5DA91-44CE-4396-AADF-341EDC377AB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP-Scratch", "ASP-Scratch\ASP-Scratch.csproj", "{BBD5DA91-44CE-4396-AADF-341EDC377AB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPnetCoreStudy", "ASPnetCoreStudy\ASPnetCoreStudy.csproj", "{9E379326-D785-4C08-B9C8-0E0DE15B6E56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BBD5DA91-44CE-4396-AADF-341EDC377AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBD5DA91-44CE-4396-AADF-341EDC377AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBD5DA91-44CE-4396-AADF-341EDC377AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E379326-D785-4C08-B9C8-0E0DE15B6E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E379326-D785-4C08-B9C8-0E0DE15B6E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E379326-D785-4C08-B9C8-0E0DE15B6E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E379326-D785-4C08-B9C8-0E0DE15B6E56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
