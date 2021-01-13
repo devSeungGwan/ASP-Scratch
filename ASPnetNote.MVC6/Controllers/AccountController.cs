@@ -1,6 +1,7 @@
 ﻿using ASPnetNote.MVC6.DataContext;
 using ASPnetNote.MVC6.Models;
 using ASPnetNote.MVC6.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -46,9 +47,11 @@ namespace ASPnetNote.MVC6.Controllers
                         u.UserPassword.Equals(model.UserPassword)
                         );
 
-                    if (user.Equals(null))
+                    if (user != null)
                     {
                         // 로그인에 성공했을 때
+                        //HttpContext.Session.SetInt32(key, value);
+                        HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
                         return RedirectToAction("LoginSuccess", "Home");
                     }
                 }
@@ -60,6 +63,16 @@ namespace ASPnetNote.MVC6.Controllers
 
 
             return View(model);
+        }
+
+        
+        
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+
+            //HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
         }
 
 

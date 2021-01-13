@@ -24,6 +24,19 @@ namespace ASPnetNote.MVC6
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // DI: 의존성 주입 - ASP.NET MVC 4, 5 => Uniny(게임x)
+            // ASP.net CORE 에서는 자체 의존성 주입 가능
+
+            // Session - 서비스와
+            services.AddSession();
+
+
+            // identity
+
+            // Web API 권한 기능
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +55,9 @@ namespace ASPnetNote.MVC6
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            // Application에서 사용하겠다.
+            app.UseSession();
+            
             app.UseRouting();
 
             app.UseAuthorization();
